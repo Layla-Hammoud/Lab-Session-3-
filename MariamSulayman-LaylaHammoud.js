@@ -11,9 +11,9 @@
 // }
 
 var arr = [5, 10, 20, 1, 15, -1];
-var min = arr[0];
+var min = arr[0]; // give min and max the fist element of the array by default
 var max = arr[0];
-for (var i = 0; i < arr.length; i++) {
+for (var i = 0; i < arr.length; i++) { // this loop will campare every element in the array with the min and max value and modify them to find the appropriate one
     if (arr[i]<min){
         min = arr[i]
     }
@@ -21,4 +21,4 @@ for (var i = 0; i < arr.length; i++) {
         max=arr[i]
     }
 }
-console.log(`${min} and ${max}`)
+console.log(`The smallest number is ${min} and the biggest number is ${max}`)
