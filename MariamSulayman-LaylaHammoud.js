@@ -25,10 +25,23 @@
 // console.log(`The smallest number is ${min} and the biggest number is ${max}`)
 
 //Exercice 3
-for (var i = 0; i < 6; i++) {
-    var star = ""
-    for(var j =0 ; j < i; j++){
-        star+="*"
+// for (var i = 0; i < 6; i++) {
+//     var star = "" // we will initialise the star in every loop
+//     for(var j =0 ; j < i; j++){
+//         star+="*"// concatenate the * with the variable start that we've intialised
+//     }
+//     console.log(star)
+// }
+
+//Exercice 4
+var array = [4000, 5, 200, -11, 300];
+var largestNumber = array[0];// we will store the largest number in this variable and give it the value by default
+for (var i = 0; i < array.length; i++) { //we will compare each element by others element using nested loop
+    for (var j = 0; j < array.length; j++) {
+        if(array[j]>array[i]){
+            largestNumber= array[j]
+        }
     }
-    console.log(star)
 }
+console.log(largestNumber)
+
