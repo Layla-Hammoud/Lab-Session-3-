@@ -1,3 +1,4 @@
+//Exercice1
 // var keys = 0;
 // switch(keys) { // switch case to check the number of keys collected so it will display the appropriate message 
 //   case 0:
@@ -9,16 +10,25 @@
 //   default:
 //     console.log("we need to swim a little bit more!")
 // }
+//Exercice 2
+// var arr = [5, 10, 20, 1, 15, -1];
+// var min = arr[0]; // give min and max the fist element of the array by default
+// var max = arr[0];
+// for (var i = 0; i < arr.length; i++) { // this loop will campare every element in the array with the min and max value and modify them to find the appropriate one
+//     if (arr[i]<min){
+//         min = arr[i]
+//     }
+//     if (arr[i]>max){
+//         max=arr[i]
+//     }
+// }
+// console.log(`The smallest number is ${min} and the biggest number is ${max}`)
 
-var arr = [5, 10, 20, 1, 15, -1];
-var min = arr[0]; // give min and max the fist element of the array by default
-var max = arr[0];
-for (var i = 0; i < arr.length; i++) { // this loop will campare every element in the array with the min and max value and modify them to find the appropriate one
-    if (arr[i]<min){
-        min = arr[i]
+//Exercice 3
+for (var i = 0; i < 6; i++) {
+    var star = ""
+    for(var j =0 ; j < i; j++){
+        star+="*"
     }
-    if (arr[i]>max){
-        max=arr[i]
-    }
+    console.log(star)
 }
-console.log(`The smallest number is ${min} and the biggest number is ${max}`)
