@@ -34,14 +34,20 @@
 // }
 
 //Exercice 4
-var array = [4000, 5, 200, -11, 300];
-var largestNumber = array[0];// we will store the largest number in this variable and give it the value by default
-for (var i = 0; i < array.length; i++) { //we will compare each element by others element using nested loop
-    for (var j = 0; j < array.length; j++) {
-        if(array[j]>array[i]){
-            largestNumber= array[j]
-        }
-    }
-}
-console.log(largestNumber)
+// var array = [4000, 5, 200, -11, 300];
+// var largestNumber = array[0];// we will store the largest number in this variable and give it the value by default
+// for (var i = 0; i < array.length; i++) { //we will compare each element by others element using nested loop
+//     for (var j = 0; j < array.length; j++) {
+//         if(array[j]>array[i]){
+//             largestNumber= array[j]
+//         }
+//     }
+// }
+// console.log(largestNumber)
 
+//Exrcice 5
+let num = 2
+function squareOfNumber(num){// this function will return the square of num which is its the argument 
+    return Math.pow(num, 2)
+}
+console.log(squareOfNumber(4))
